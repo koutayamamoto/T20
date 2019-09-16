@@ -4,6 +4,8 @@
 document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
 
 
+'use strict';
+
 var shapes;
 var img;
 //noSmooth(); //軽くするためのノースムース
@@ -56,7 +58,7 @@ function draw() {
       //rotate(frameCount / 20.0); //勝手に回転
       translate(mouseYFactor * w1 * 2)
       translate(-posX,-posY);
-      image(shapes[gradientToIndex], posX+(w1 * mouseYFactor * 10), posY+(w1 * mouseYFactor * 10), w1, w1);
+      image(shapes[gradientToIndex], posX+(w1 * mouseYFactor * 0), posY+(w1 * mouseYFactor * 10), w1, w1);
 
       if(mouseX > 150)image(shapes[gradientToIndex], posX+(w1 * mouseYFactor * 10), posY+(w1 * mouseYFactor * 10), (w1 * mouseXFactor * 2), (w1 * mouseXFactor * 2));
 
