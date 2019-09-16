@@ -4,8 +4,6 @@
 document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
 
 
-'use strict';
-
 var shapes;
 var img;
 //noSmooth(); //軽くするためのノースムース
